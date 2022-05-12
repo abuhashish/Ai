@@ -1,10 +1,11 @@
 class Node:
-        def __init__(self,name,arial,walkdistance,carDistance):
+        def __init__(self,name,arial,adjCities,walkdistance,carDistance):
                 self.name=name
-                self.arial=arial
-                self.children=[]
-        def addchild(self,child,actual):
-                self.children.append({child:carDistance})
+                self.airialDist=arial
+                self.adjCities=adjCities
+                self.carDist=carDistance
+                self.walkDist=walkdistance
+        
                 
         
 
